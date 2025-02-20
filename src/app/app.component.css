@@ -1,7 +1,11 @@
-main {
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  padding-top: 0.5em;
+  width: 30vw;
 }

@@ -1,0 +1,16 @@
+<form #form="ngForm" (ngSubmit)="submit(); form.resetForm()">
+  <input
+    type="text"
+    placeholder="todo: clean room"
+    name="todo"
+    [(ngModel)]="todo"
+    required
+  />
+  <button>Create</button>
+  <input
+    type="checkbox"
+    (click)="onCheckboxChange()"
+    [(ngModel)]="showToggled"
+    [ngModelOptions]="{standalone: true}"
+  />
+</form>
